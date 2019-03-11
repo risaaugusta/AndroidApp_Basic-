@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:background="@drawable/bg2"
+    tools:context="com.example.risa.operatoraritmatika.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Angka Pertama!"
+        android:id="@+id/txtAwal"
+        android:layout_alignParentTop="true"
+    />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAwal"
+        android:layout_below="@+id/txtAwal"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Angka Kedua!"
+        android:id="@+id/textView"
+        android:layout_below="@+id/editAwal"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editKedua"
+        android:layout_below="@id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Operator"
+        android:id="@+id/txtOperator"
+        android:layout_below="@+id/editKedua"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:id="@+id/btnJumlah"
+        android:layout_above="@+id/txtHasil"
+        android:layout_marginLeft="173dp"
+        android:background="#ADD8E6"/>
+        <!--android:layout_toStartOf="@+id/btnKurang"-->
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="230dp"
+        android:text="-"
+        android:id="@+id/btnKurang"
+        android:layout_below="@+id/txtOperator"
+        android:background="#ADD8E6"
+
+        />
+        <!--android:layout_toStartOf="@+id/btnKali"-->
+
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="x"
+        android:id="@+id/btnKali"
+        android:layout_below="@+id/txtOperator"
+        android:layout_marginLeft="60dp"
+        android:background="#ADD8E6"
+        />
+
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/btnBagi"
+        android:layout_below="@+id/txtOperator"
+        android:layout_marginLeft="115dp"
+        android:background="#ADD8E6"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil"
+        android:id="@id/txtHasil"
+        android:layout_below="@+id/btnKurang"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editHasil"
+        android:layout_below="@+id/txtHasil"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        />
+</RelativeLayout>
